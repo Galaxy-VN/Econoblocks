@@ -11,6 +11,7 @@ import dev.flrp.econoblocks.managers.EconomyManager;
 import dev.flrp.econoblocks.managers.MessageManager;
 import me.mattstudios.mf.base.CommandManager;
 import org.bstats.bukkit.Metrics;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -65,6 +66,7 @@ public final class Econoblocks extends JavaPlugin {
 
     public void onReload() {
         System.out.println("[Econoblocks] Reloading...");
+
         // Files
         reloadConfig();
         initiateFiles();

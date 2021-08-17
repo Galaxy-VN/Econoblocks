@@ -4,3 +4,8 @@ command-denied: "&cYou do not have permission to run this command"
 economy-given: "&7You've earned &f${0} &7by mining this block."
 economy-max: "&cYou can't earn more money due to a maximum balance."
 economy-toggle: "&7Toggled income messages."
+title: "&f+&e {0}"
+sub-title: "&f▪ Reward Obtained ▪"
+fade-in: 20
+stay: 20
+fade-out: 20

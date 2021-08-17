@@ -46,6 +46,9 @@ public class MessageManager {
                 title.setMarker(true);
                 playAnimation(title);
                 break;
+            case TITLES:
+                player.sendTitle(Locale.parse(Locale.TITLE.replace("{0}", String.valueOf(amount))), Locale.parse(Locale.SUB_TITLE.replace("{0}", String.valueOf(amount))), Locale.FADE_IN, Locale.STAY, Locale.FADE_OUT);
+                break;
             default:
         }
     }
@@ -69,7 +72,8 @@ public class MessageManager {
 
         CHAT,
         ACTION_BAR,
-        HOLOGRAM;
+        HOLOGRAM,
+        TITLES;
 
         public static MessageType getType(String identifier) {
             try {
